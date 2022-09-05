@@ -1,10 +1,9 @@
 <?php
 
-define('HOMEPATH', 'C:/Documents/data/');//colocar caminho da sua pasta
+define('HOMEPATH', 'C:/Users/' . getenv("USERNAME"). '/Documents/data/');
 
 $file = glob(HOMEPATH . "in/*.dat");
 
-echo($file);
 foreach ($file as $dados){
     
     $teste = "'$dados'";

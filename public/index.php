@@ -73,7 +73,7 @@
             }
             const dados = JSON.stringify(resultadoFinal);
             $.ajax({
-                url: '/helpers/geraArquivo.php',
+                url: 'helpers/geraArquivo.php',
                 type: 'POST',
                 data: {data: dados},
                 success: function(result){

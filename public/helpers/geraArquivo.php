@@ -1,6 +1,7 @@
 <?php
 
-define('HOMEPATH', 'C:/Documents/data/');//colocar caminho da sua pasta
+define('HOMEPATH', 'C:/Users/' . getenv("USERNAME"). '/Documents/data/');
+
 $result = $_POST['data'];
 
 $dados = json_decode($result, true);
